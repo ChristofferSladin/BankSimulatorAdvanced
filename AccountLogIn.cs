@@ -22,6 +22,8 @@ namespace BankSimulatorAdvanced
             string password = Console.ReadLine();
             accountAndPassword.Add(userName, password);
 
+            Console.Clear();
+
             bool run = true;
             while (run)
             {
@@ -39,6 +41,7 @@ namespace BankSimulatorAdvanced
                     var app = new Applications();
                     app.Run();
 
+                    Console.Clear();
                     run = false;
                 }
 
